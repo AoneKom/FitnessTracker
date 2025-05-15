@@ -1,0 +1,27 @@
+﻿<Window x:Class="FitnessApp.DashboardWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Haupt" Height="450" Width="400">
+    <Grid Margin="20">
+        <StackPanel>
+            <TextBlock Text="Willkommen!" FontSize="18" FontWeight="Bold" Margin="0,0,0,10" />
+
+            <TextBlock Text="Aktivitätsniveau:" FontWeight="SemiBold" />
+            <ProgressBar x:Name="ActivityProgressBar" Height="20" Maximum="100" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Kalorienverbrauch:" FontWeight="SemiBold"/>
+            <TextBlock x:Name="CaloriesTextBlock" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Aktuelles Gewicht:" FontWeight="SemiBold"/>
+            <TextBlock x:Name="WeightTextBlock" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Puls / Druck:" FontWeight="SemiBold"/>
+            <TextBlock x:Name="HealthTextBlock" Margin="0,0,0,10"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+                <Button Content="Ziele" Width="100" Click="Goals_Click" Margin="5"/>
+                <Button Content="Aktivität hinzufügen" Width="150" Click="AddActivity_Click" Margin="5"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,27 @@
+﻿<Window x:Class="FitnessApp.GoalsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Ziele" Height="400" Width="350">
+    <Grid Margin="20">
+        <StackPanel>
+            <TextBlock Text="Ziele setzen" FontSize="16" FontWeight="Bold" Margin="0,0,0,10" />
+
+            <TextBlock Text="Kalorienziel (kcal):" />
+            <TextBox x:Name="CaloriesGoalBox" Margin="0,0,0,10" />
+
+            <TextBlock Text="Ziel Schritt für Schritt:" />
+            <TextBox x:Name="StepsGoalBox" Margin="0,0,0,10" />
+
+            <Button Content="Ziele speichern" Click="SaveGoals_Click" Margin="0,10,0,10"/>
+
+            <Separator Margin="0,10,0,10"/>
+
+            <TextBlock Text="Fortschritt:" FontWeight="SemiBold" />
+            <TextBlock x:Name="CaloriesProgressText" Margin="0,5,0,0"/>
+            <ProgressBar x:Name="CaloriesProgressBar" Height="20" Maximum="100" />
+
+            <TextBlock x:Name="StepsProgressText" Margin="10,10,0,0"/>
+            <ProgressBar x:Name="StepsProgressBar" Height="20" Maximum="100" />
+        </StackPanel>
+    </Grid>
+</Window>
